@@ -9,10 +9,10 @@
 
   <?php
     // this doesnt seem to work when defined here (globally), outside the functions
-    // $script_path = "/Users/Karina/Dropbox/Projects/software/Notetaker/hashtag-search.sh"
+    // $script_path = "./hashtag-search.sh"
     
     function getAllHashtags() {
-      $script_path = "/Users/Karina/Dropbox/Projects/software/Notetaker/hashtag-search.sh";
+      $script_path = "./hashtag-search.sh";
       exec($script_path, $output, $return_var);
       return $output;
     }
@@ -21,7 +21,7 @@
       // The global $_POST variable allows you to access the data sent with the POST method by name
       if (isset($_POST['checkbox'])) {
         $checkedtags = $_POST['checkbox'];
-        $script_path = "/Users/Karina/Dropbox/Projects/software/Notetaker/hashtag-search.sh";
+        $script_path = "./hashtag-search.sh";
         foreach( $checkedtags as $tag ):
           $bash_command = $script_path . " " . substr($tag, 1); // remove "#" from beginning of $tag
           echo $tag, '<br/>';
