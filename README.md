@@ -21,10 +21,10 @@ This is intended to be a quick prototype of a bash script for using a hashtag or
 - [x] TODO: [High] HTML page is dysfunctional. Need to unblock a lot of different things. Get tutored.
 - [x] TODO: [Med] Better understand bash script output to eliminate stout=0 coming as an ouput
 - [x] TODO: [Low] Can evolve script to take multiple inputs and do an "OR" search for all of them
-- [ ] TODO: [Med] Get Code Review
+- [x] TODO: [Med] Get Code Review
+- [x] TODO: [Med] Persist checkbox state
+- [x] TODO: [Med] Add a "check all" option
 - [ ] TODO: [Med] Remove absolute file paths from .sh and .php files
-- [ ] TODO: [Med] Persist checkbox state
-- [ ] TODO: [Med] Add a "check all" option
 - [ ] TODO: [Med] Keep an eye on what has been exluded (e.g. hashtags with numbers, hyphens, other chars, etc)
 - [ ] TODO: [Med] Find todos - e.g. [ ] or [x] or [X]
 - [ ] TODO: [Med] Think about how to make this usable/readables for large search results
