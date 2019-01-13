@@ -1,0 +1,107 @@
+############################################################################
+
+Agile dev... quick iterative code dump
+
+#######################
+## Find all hashtags ##
+#######################
+
+# Do a grep for all hashtags found in this directory: /Users/Karina/Dropbox/Notes/Journal/
+
+# man grep
+# grep homework /Users/Karina/Dropbox/Notes/Journal/
+# grep -r homework /Users/Karina/Dropbox/Notes/Journal/
+# grep -r "#homework" /Users/Karina/Dropbox/Notes/Journal/
+# grep -r "#homework" /Users/Karina/Dropbox/Notes/Journal
+# grep -r "#[[:alnum:]]" /Users/Karina/Dropbox/Notes/Journal
+# grep -r "#[[:alpha:]]" /Users/Karina/Dropbox/Notes/Journal
+# grep -r "#[a-zA-Z]" /Users/Karina/Dropbox/Notes/Journal
+# 
+# # count to make sure you're getting the same number of results both ways:
+# 
+# grep -r "#[a-zA-Z]" /Users/Karina/Dropbox/Notes/Journal | wc -l
+#        7
+# grep -r "#[[:alpha:]]" /Users/Karina/Dropbox/Notes/Journal | wc -l
+#        7
+# 
+# # Trim down to just the hastag itself
+# 
+# grep -or "#[a-zA-Z]" /Users/Karina/Dropbox/Notes/Journal
+# grep -or "#[a-zA-Z]*" /Users/Karina/Dropbox/Notes/Journal
+# grep -or "#[a-zA-Z][a-zA-Z]*" /Users/Karina/Dropbox/Notes/Journal
+# grep -hor "#[a-zA-Z][a-zA-Z]*" /Users/Karina/Dropbox/Notes/Journal
+# 
+# # Remove dupes
+# 
+# man sort
+# grep -hor "#[a-zA-Z][a-zA-Z]*" /Users/Karina/Dropbox/Notes/Journal | sort
+# grep -hor "#[a-zA-Z][a-zA-Z]*" /Users/Karina/Dropbox/Notes/Journal | sort -u
+
+
+##################################################
+## Get all lines/filenames with specific hastag ##
+##################################################
+
+# grep -r "#homework" /Users/Karina/Dropbox/Notes/Journal | sort -u
+
+############################################################################
+
+
+############################################################################
+
+######################
+## Running PHP file ##
+######################
+
+# in Terminal
+
+# cd ~/Dropbox/Projects/software/Notetaker/ (wherever the index.php file is)
+# php -S localhost:8000 (Starts built-in web server on the given local address and port)
+# built in web server means you dont need apache/xampp
+
+# in Browser
+
+# http://localhost:8000/ (go here -- looks for an index.php or index.html file, i think?)
+
+## JAVASCRIPT DUMP ##
+
+  <script>
+  function helloworld() {
+    alert("hello world!")
+  }
+  
+  function hellocheckbox() {
+    itemList = document.getElementsByName("checkbox"); // a NodeList
+    alert(itemList);
+    alert(itemList.length);
+    alert(itemList[2]);
+    alert(itemList[2].value);
+    alert(itemList[2].checked);
+    alert(itemList[3].value);
+    alert(itemList[3].checked);
+    console.log(itemList);
+    console.log(itemList.length);
+  }
+  
+  function hashtagsearch() {
+    let itemList = document.getElementsByName("checkbox"); // a NodeList
+    let outputBox = document.getElementById("hashtagsearchresults");    
+    //let collection = itemList.selectedOptions;
+    let output = "";
+    let boxchecked = false;
+
+    for (let i=0; i<itemList.length; i++) {
+      if (itemList[i].checked) {
+        boxchecked = true;
+        if (output === "") {
+          output = "Here are the hashtags you selected: ";
+        }
+        hashtag = itemList[i].value;
+        output += hashtag + ", ";
+      }
+    }
+    if (output === "") {
+      output = "You didn't select any hashtags!";
+    }
+  }
+  </script>
