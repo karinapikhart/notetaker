@@ -14,7 +14,7 @@
         checkboxes[i].checked = source.checked;
       }
 
-      // this wasnt working...
+      // this wasnt working... don't know why. so used the for loop strategy above
       // for(var checkbox in checkboxes) { 
       //  checkbox.checked = source.checked;
       // }

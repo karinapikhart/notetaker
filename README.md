@@ -12,10 +12,10 @@ This is intended to be a quick prototype of a bash script for using a hashtag or
 * 7:30pm - feel motivated to keep going to a little bit more. Going to try 1-2 more microtasks
 * 9:15pm - STOP. got a few buttons and forms on my page. It's not quite functional. Need to tie it together.
 
-# Agile Dev; Constantly Evolving/grooming Backlog; Sandbox [Priority] {Size}
-- [x] TODO: [High] Use a script to get a list of all my hashtags/topics (ACTUAL SIZE: 15 mins)
-- [x] TODO: [High] Use a script to find all files containing a hashtag, or even the full line of the file. (ACTUAL SIZE: 15 mins)
-- [x] TODO: [High] Make script runnable from a little HTML page/file - e.g. https://stackoverflow.com/questions/6235785/run-a-shell-script-with-an-html-button (ACTUAL SIZE: 45 mins)
+# Agile Dev; Constantly Evolving/grooming Backlog; Sandbox [Priority] {Size Estimate} (Size Actual)
+- [x] TODO: [High] (15 mins) Use a script to get a list of all my hashtags/topics
+- [x] TODO: [High] (15 mins) Use a script to find all files containing a hashtag, or even the full line of the file.
+- [x] TODO: [High] (45 mins) Make script runnable from a little HTML page/file - e.g. https://stackoverflow.com/questions/6235785/run-a-shell-script-with-an-html-button
 - [x] TODO: [High] Clean up php's rendering of html output
 - [x] TODO: [High] Put a text box into the php file to accept an input
 - [x] TODO: [High] HTML page is dysfunctional. Need to unblock a lot of different things. Get tutored.
@@ -24,18 +24,23 @@ This is intended to be a quick prototype of a bash script for using a hashtag or
 - [x] TODO: [Med] Get Code Review
 - [x] TODO: [Med] Persist checkbox state
 - [x] TODO: [Med] Add a "check all" option
-- [ ] TODO: [Med] Remove absolute file paths from .sh and .php files
-- [ ] TODO: [Med] Keep an eye on what has been exluded (e.g. hashtags with numbers, hyphens, other chars, etc)
-- [ ] TODO: [Med] Find todos - e.g. [ ] or [x] or [X]
-- [ ] TODO: [Med] Think about how to make this usable/readables for large search results
-- [ ] TODO: [Low] Write results to a file?
-- [ ] TODO: [Low] Make "Results" header not show up until there are results
-- [ ] TODO: [Low] Think about edge cases... e.g. handle what happens when user clicks Submit with nothing checked.
-- [ ] TODO: [Vague] Prettify -- make it dynamic, mobile friendly, etc.
-- [ ] TODO: [Vague] Easily browse the search results to find what interests me or look for themes.
-- [ ] TODO: [] Learn what Apache / XAMPP is. Learn what built in webserver is. Learn what local host / local port is. Learn about index.php/index.html files. 
-- [ ] TODO: []
-- [ ] TODO: []
-- [ ] TODO: []
-- [ ] TODO: []
-
+- [x] TODO: [Low] {} () Make "Results" header not show up until there are results
+- [ ] TODO: [High] {} () Figure out how to make this usable to an average user -- without needing to cd to directory and spin up local web server
+- [ ] TODO: [Med] {} () Remove absolute file paths from .sh and .php files
+- [ ] TODO: [Med] {} () Keep an eye on what has been exluded (e.g. hashtags with numbers, hyphens, other chars, etc)
+- [ ] TODO: [Med] {} () Keep an eye on what has been wrongly included (e.g. hashtags in URLs, e.g. https://en.wikipedia.org/wiki/Attachment_theory#Attachment_patterns)
+- [ ] TODO: [Med] {} () Find todos - e.g. [ ] or [x] or [X]
+- [ ] TODO: [Med] {} () Think about how to make this usable/readables for large search results
+- [ ] TODO: [Low] {} () Write results to a file?
+- [ ] TODO: [Low] {} () Think about edge cases... e.g. handle what happens when user clicks Submit with nothing checked.
+- [ ] TODO: [Vague] {} () Prettify -- make it dynamic, mobile friendly, etc.
+- [ ] TODO: [Vague] {} () Easily browse the search results to find what interests me or look for themes.
+- [ ] TODO: [] {} () Learn what Apache / XAMPP is. Learn what built in webserver is. Learn what local host / local port is. Learn about index.php/index.html files. 
+- [ ] TODO: [] {} () 
+- [ ] TODO: [] {} () 
+- [ ] TODO: [] {} () 
+- [ ] TODO: [] {} () 
+- [ ] TODO: [] {} () 
+- [ ] TODO: [] {} () 
+- [ ] TODO: [] {} () 
+- [ ] TODO: [] {} () 
